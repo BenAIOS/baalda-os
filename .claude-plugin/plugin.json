@@ -1,0 +1,17 @@
+{
+  "name": "baalda-os",
+  "displayName": "Baalda OS",
+  "description": "Turn a Baalda vault into an AI-operated second brain: /setup builds and personalizes it, /optimizer audits it against 10 frameworks, /operator schedules an agent that keeps it current, /baalda-guide answers Baalda questions.",
+  "version": "2.1.3",
+  "author": {
+    "name": "BenAI"
+  },
+  "homepage": "https://baalda.com",
+  "repository": "https://github.com/naveedharri/baalda-os",
+  "license": "MIT",
+  "keywords": ["baalda", "second-brain", "vault", "knowledge-management", "markdown"],
+  "icon": "./assets/icon.png",
+  "supportUrl": "https://github.com/naveedharri/baalda-os/issues",
+  "privacyPolicyUrl": "https://baalda.com/privacy",
+  "termsOfServiceUrl": "https://baalda.com/terms"
+}
