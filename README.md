@@ -41,7 +41,7 @@ What the skills read, write and fetch:
 
 ## Support
 
-Open an issue at [github.com/naveedharri/baalda-os/issues](https://github.com/naveedharri/baalda-os/issues).
+Open an issue at [github.com/BenAIOS/baalda-os/issues](https://github.com/BenAIOS/baalda-os/issues).
 
 ## License
 
