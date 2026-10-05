@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "baalda": {
+      "type": "http",
+      "url": "https://api.baalda.com/api/mcp"
+    }
+  }
+}

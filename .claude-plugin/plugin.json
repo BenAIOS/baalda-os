@@ -2,7 +2,7 @@
   "name": "baalda-os",
   "displayName": "Baalda OS",
   "description": "Turn a Baalda vault into an AI-operated second brain: /setup builds and personalizes it, /optimizer audits it against 10 frameworks, /operator schedules an agent that keeps it current, /baalda-guide answers Baalda questions.",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "author": {
     "name": "BenAI"
   },

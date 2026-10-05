@@ -21,11 +21,12 @@ Each skill runs only when you call it by its command.
 
 ## Data and network use
 
-This plugin contains only skill instructions and HTML templates. It ships no MCP server, hooks, scripts or executables, and it has no telemetry. It does not send your data to any server run by the plugin's author.
+This plugin contains skill instructions, HTML templates and one remote MCP server declaration: Baalda's own connector. It ships no hooks, scripts or executables, and it has no telemetry.
 
 What the skills read, write and fetch:
 
-- **Your vault.** The skills read and write Markdown files in the Baalda vault you run them from, using local file tools or the Baalda MCP connector if you have connected it. Setup writes the details you give it (your name, role, team, business, projects) into notes in your vault.
+- **Baalda connector.** The plugin connects to Baalda's MCP server at `https://api.baalda.com/api/mcp`. You sign in with your Baalda account and pick a vault on Baalda's consent screen. Vault reads and writes, including note moves, renames and deletes, go through this connector, and it can only reach what your Baalda account can see. Baalda's [privacy policy](https://baalda.com/privacy) covers the data it handles.
+- **Your vault.** The skills read and write Markdown files in the Baalda vault you run them from, using local file tools or the Baalda connector. Setup writes the details you give it (your name, role, team, business, projects) into notes in your vault.
 - **Links and files you provide.** During Setup you can paste links or point at files and folders. Claude reads those to personalize the vault.
 - **Baalda documentation.** Baalda Guide fetches public docs from `https://raw.githubusercontent.com/naveedharri/baalda/main/` and pages on `https://baalda.com`. These are read-only requests that carry no vault content.
 - **Google Fonts.** The Optimizer's HTML report loads fonts from `fonts.googleapis.com` and `fonts.gstatic.com` when you open it in a browser.
@@ -35,7 +36,7 @@ What the skills read, write and fetch:
 ## Requirements
 
 - A Baalda vault (desktop app or a synced vault). Get Baalda at [baalda.com](https://baalda.com).
-- Optional: the Baalda MCP connector (Vault settings, MCP) so the skills can move and rename notes safely.
+- A Baalda account to sign in to the included Baalda connector, which lets the skills move and rename notes safely. If you self-host Baalda, add your own server's MCP endpoint (`<your-server>/api/mcp`) instead.
 - Optional for Operator: the connectors you want it to use.
 
 ## Support
